@@ -1,1 +1,3 @@
 # StockBot-Simulator
+
+The stockbot simulator will generate 10 years of stock price data for 1000 similar stocks. The "Bot" will then use that data so simulate buying and selling based on trends in the price. The current implentaion first ids the recent trend of the quote then waits for a change in behaviour to make trades. A sudden drop will trigger a sell event while a sudden rise will trigger a buy. The bot uses the first 5 years to establish a stocks volatility then runs the last 5 in real time. The bot currently out performs holding the stock to maturation 60%-65% of the time. The theroetical maximun do to natural distrubution should be around 75% but due to freeloader rules the bot may only make a trade every two days. 
